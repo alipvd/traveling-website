@@ -10,4 +10,12 @@ module.exports = {
     },
     mode: 'development',// to fix mode warning in terminal
     watch: true,
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader']
+            }
+        ]
+    }
 }
