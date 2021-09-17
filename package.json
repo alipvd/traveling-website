@@ -24,9 +24,12 @@
     "postcss-preset-env": "^6.7.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.4",
     "css-loader": "^6.2.0",
     "postcss": "^8.3.6",
     "postcss-loader": "^6.1.1",
+    "postcss-nested": "^5.0.6",
+    "postcss-simple-vars": "^6.0.3",
     "style-loader": "^3.2.1",
     "webpack": "^5.52.1",
     "webpack-cli": "^4.8.0"

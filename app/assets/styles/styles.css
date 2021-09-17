@@ -1,4 +1,14 @@
-body{
-    color: green;
-    font-size: 40px
+$red: #e71c48;
+$blue: #291ce7;
+$green: #86c94f;
+body {
+  color: $red;
+  font-size: 50px;
+}
+
+footer{
+    background: linear-gradient(to left, black, white);
+    p {
+        color: $blue;
+      }
 }

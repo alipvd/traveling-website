@@ -14,7 +14,28 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader", { loader: "postcss-loader", }],
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    //"postcss-preset-env",
+                    require("postcss-simple-vars"),
+                    require("postcss-nested"),
+                    require("autoprefixer"),
+                    {
+                      // Options
+                    },
+                  ],
+                ],
+              },
+            },
+          },
+        ],
       },
     ],
   },
