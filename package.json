@@ -30,6 +30,8 @@
     "postcss-loader": "^6.1.1",
     "postcss-nested": "^5.0.6",
     "postcss-simple-vars": "^6.0.3",
+    "sass": "^1.41.1",
+    "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "webpack": "^5.52.1",
     "webpack-cli": "^4.8.0"

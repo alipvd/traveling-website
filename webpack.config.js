@@ -8,33 +8,37 @@ module.exports = {
     filename: "bundled.js",
     path: path.resolve(__dirname, "app"),
   },
+
   mode: "development", // to fix mode warning in terminal
+
   watch: true,
+  
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.scss$/i,
         use: [
           "style-loader",
           "css-loader",
-          {
-            loader: "postcss-loader",
-            options: {
-              postcssOptions: {
-                plugins: [
-                  [
-                    //"postcss-preset-env",
-                    require("postcss-simple-vars"),
-                    require("postcss-nested"),
-                    require("autoprefixer"),
-                    {
-                      // Options
-                    },
-                  ],
-                ],
-              },
-            },
-          },
+          "sass-loader"
+          // {
+          //   loader: "postcss-loader",
+          //   options: {
+          //     postcssOptions: {
+          //       plugins: [
+          //         [
+          //           //"postcss-preset-env",
+          //           require("postcss-simple-vars"),
+          //           require("postcss-nested"),
+          //           require("autoprefixer"),
+          //           {
+          //             // Options
+          //           },
+          //         ],
+          //       ],
+          //     },
+          //   },
+          // },
         ],
       },
     ],
